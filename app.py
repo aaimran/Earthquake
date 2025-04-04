@@ -364,4 +364,4 @@ def update_animation_speed(speed_value):
     return speed_value * 1000
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=8080)
