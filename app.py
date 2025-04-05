@@ -8,6 +8,9 @@ import pickle
 import os
 import glob
 
+app = dash.Dash(__name__)
+server = app.server 
+
 # --- Identify Precomputed Simulation Files in datasets/ ---
 datasets_dir = os.path.join(os.path.dirname(__file__), "datasets")
 sim_files = glob.glob(os.path.join(datasets_dir, "simulation_tau_*.pkl"))
