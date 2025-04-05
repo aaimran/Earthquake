@@ -40,7 +40,7 @@ default_tau_min = tau_values[0] if tau_values else 81.24 - 0.36
 default_tau_max = tau_values[-1] if tau_values else 81.24 + 0.36
 default_tau_step = (tau_values[1] - tau_values[0]) if (tau_values and len(tau_values) > 1) else 0.072
 
-app = dash.Dash(__name__)
+#app = dash.Dash(__name__)
 
 app.layout = html.Div([
     html.H1("Earthquake Simulator"),
